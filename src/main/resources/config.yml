@@ -1,0 +1,4 @@
+permissions:
+  - damage.easy:1.1
+  - damage.medium:2.3
+  - damage.hard:3.5
