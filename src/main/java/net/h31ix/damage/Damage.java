@@ -81,7 +81,7 @@ public class Damage extends JavaPlugin implements Listener, CommandExecutor
     @EventHandler
     public void onEntityDeath(EntityDeathEvent event)
     {
-        if(event.getEntity().getLastDamageCause().getEntity() != null)
+        if(event.getEntity().getLastDamageCause() != null && event.getEntity().getLastDamageCause().getEntity() != null)
         {
             Entity e = event.getEntity().getLastDamageCause().getEntity();
             if(e instanceof Player)
